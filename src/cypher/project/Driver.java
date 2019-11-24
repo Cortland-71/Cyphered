@@ -19,7 +19,7 @@ public class Driver {
     }
 
     private static List<String> createAlphabet() {
-        return Stream.iterate(33, e->++e).limit(93)
+        return Stream.iterate(65, e->++e).limit(26)
                 .map(e->Character.toString((char)(int)e))
                 .collect(Collectors.toList());
     }

@@ -6,19 +6,21 @@ class Cypher {
         int shift = getRandomShift();
         System.out.println("\nRandom shift: " + shift);
 
-        StringBuilder cyphered_message = new StringBuilder();
-        for (String letter : message.split("")) {
-            int commonIndex = alphabet.indexOf(letter);
-            if (commonIndex+shift < alphabet.size()) {
-                cyphered_message.append(alphabet.get(commonIndex + shift));
+        StringBuilder cypheredMessage = new StringBuilder();
+
+        for (String letter : message.toUpperCase().split("")) {
+            int currentLetterIndex = alphabet.indexOf(letter);
+            if (currentLetterIndex+shift > alphabet.size()-1) {
+                int wrappedIndex = shift-alphabet.subList(currentLetterIndex,
+                        alphabet.size()).size();
+                cypheredMessage.append(alphabet.get(wrappedIndex));
                 continue;
-            } int wrappedIndex = shift-alphabet.subList(commonIndex,
-                    alphabet.size()).size();
-            cyphered_message.append(alphabet.get(wrappedIndex));
-        } return cyphered_message.toString();
+            }
+            cypheredMessage.append(alphabet.get(currentLetterIndex + shift));
+        } return cypheredMessage.toString();
     }
 
     private int getRandomShift() {
-        return new Random().nextInt(26) + 1;
+        return new Random().nextInt(27);
     }
 }
