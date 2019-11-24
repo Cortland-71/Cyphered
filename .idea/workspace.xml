@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40d1d6d1-a716-4baa-8f64-18b001263954" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cyphered/cypher/project/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cyphered/cypher/project/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cypher/project/Cypher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cypher/project/Cypher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cypher/project/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cypher/project/Driver.java" afterDir="false" />
-    </list>
+    <list default="true" id="40d1d6d1-a716-4baa-8f64-18b001263954" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
